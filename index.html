@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+</head>
+<body id="body">
+    <div id="invis">Light</div>
+    <div id="container">
+
+    <div class="parent">
+
+        <div class="topContainer">
+            <img id="logo" src="Logo.png">
+        </div>
+
+        <div class="topContainer">
+        <label class="switch">
+            <input id="slider" onclick="changeTheme()" type="checkbox">
+            <div class="slider round"></div>
+          </label>
+        </div>
+
+    </div>
+
+    <div id="inputHolder">
+        <label id="input">0</label>
+    </div>
+
+    <div id="buttonParent">
+
+        <div class="buttonsHolder">
+            <button onclick="clearAll()" class="cButtons" id="b1">C</button>
+            <button onclick="specify(' % ')"class="cButtons" id="b2">%</button>
+            <button class="cButtons" id="b3">⬅</button>
+            <button onclick="specify(' / ')"class="cButtons" id="b4">/</button>
+        </div>
+
+        <div class="buttonsHolder">
+            <button onclick="specify(7)"class="cButtons" id="b5">7</button>
+            <button onclick="specify(8)"class="cButtons" id="b6">8</button>
+            <button onclick="specify(9)"class="cButtons" id="b7">9</button>
+            <button onclick="specify(' × ')"class="cButtons" id="b8">×</button>
+        </div>
+
+        <div class="buttonsHolder">
+            <button onclick="specify(4)"class="cButtons" id="b9">4</button>
+            <button onclick="specify(5)"class="cButtons" id="b10">5</button>
+            <button onclick="specify(6)"class="cButtons" id="b11">6</button>
+            <button onclick="specify(' - ')"class="cButtons" id="b12">-</button>
+        </div>
+
+        <div class="buttonsHolder">
+            <button onclick="specify(1)"class="cButtons" id="b13">1</button>
+            <button onclick="specify(2)"class="cButtons" id="b14">2</button>
+            <button onclick="specify(3)"class="cButtons" id="b15">3</button>
+            <button onclick="specify(' + ')"class="cButtons" id="b16">+</button>
+        </div>
+        <div class="buttonsHolder">
+            <button onclick="specify(0)"id="zero" class="cButtons">0</button>
+            <button onclick="specify('.')"class="cButtons" id="b17">.</button>
+            <button onclick="evaluateComputerizedStatement()"id="equal" class="cButtons">=</button>
+        </div>
+    </div>
+
+</div>
+</body>
+<script src="main.js"></script>
+</html>
